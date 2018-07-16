@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/jumaxbrian/phone_book.svg?style=svg)](https://circleci.com/gh/jumaxbrian/phone_book)
+
 ## Phone Book App
 
 1. ### About
