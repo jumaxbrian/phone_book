@@ -1,3 +1,5 @@
+# A file for continuous integration which supports automated testing
+
 version: 2
 jobs:
   build:
