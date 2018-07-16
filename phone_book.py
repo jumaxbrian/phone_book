@@ -1,6 +1,11 @@
 from phone_entry import PhoneEntry
 
 class PhoneBook:
+    '''
+    This class will simulate a typical phone book that will contain
+    contacts in the form on PhoneEntries.
+    A dictionary has been used for constant time lookups
+    '''
     def __init__(self):
         self.entries = dict()
         

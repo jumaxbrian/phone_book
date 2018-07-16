@@ -1,10 +1,15 @@
 import logging
 
+#Setup for logging
 logging.basicConfig(filename='app.log',
     format='%(asctime)s:%(levelname)s:%(message)s'
 )
 
 class PhoneEntry:
+    '''
+    Each contact is saved as a PhoneEntry in the PhoneBook where
+    an entry has a name and a number
+    '''
     def __init__(self, name, number):
         self.name = name
         self.number = number
