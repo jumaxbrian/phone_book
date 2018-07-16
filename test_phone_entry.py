@@ -7,6 +7,10 @@ class TestPhoneEntry(unittest.TestCase):
         self.assertFalse(PhoneEntry.validateNumber('1234567'))
         self.assertFalse(PhoneEntry.validateNumber('1234567a'))
 
+    def test_validate_name(self):
+        self.assertTrue(PhoneEntry.validateName('abcdef'))
+        self.assertFalse(PhoneEntry.validateName('abcd1'))
+
 
 if __name__ == "__main__":
     unittest.main()
