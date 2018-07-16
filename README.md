@@ -1,10 +1,10 @@
 ## Phone Book App
 
 1. About
-This program simulates a phone book application. Given n​ names and phone numbers, it assembles a phone book that maps friends' names to their respective phone numbers.
+    This program simulates a phone book application. Given n​ names and phone numbers, it assembles a phone book that maps friends' names to their respective phone numbers.
 
 1. Installation
-Clone this repository into your local machine. Ensure you have python3 installed as it is required by this application. Once you have cloned this repository locally. Move into the cloned directory e.g. `phone_book` and run `python3 phone_book_example.py `. 
+    Clone this repository into your local machine. Ensure you have python3 installed as it is required by this application. Once you have cloned this repository locally. Move into the cloned directory e.g. `phone_book` and run `python3 phone_book_example.py `. 
 
 1. Example usage
     1. Ensure you are in the directory that you cloned the repository into i.e. `phone_book` if you did not specify any.
@@ -31,6 +31,6 @@ Clone this repository into your local machine. Ensure you have python3 installed
         1. You must use spaces to separate the names from the numbers
 
 1. Running tests
-To run tests, type the codes below to test each of the two classes
- `python3 test_phone_entry.py `
- `python3 test_phone_book.py `
+    To run tests, type the codes below to test each of the two classes
+    1. `python3 test_phone_entry.py ` for `PhoneEntry`
+    1. `python3 test_phone_book.py ` for `PhoneBook`
