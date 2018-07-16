@@ -7,9 +7,7 @@ Created on Sun Jul 15 21:38:48 2018
 """
 
 import sys
-
-
-            
+import logging         
 
 from phone_book import PhoneBook
             
@@ -25,7 +23,8 @@ def processInput():
         if(isEntryValid):
             phoneBook.addEntry(entry)
         else:
-            print("Invalid entry: ", entry)
+            errorMsg = "Invalid entry: " + entry
+            logging.error(errorMsg)
             
     del input[:n] #delete phone book entries and remain with queries only
         

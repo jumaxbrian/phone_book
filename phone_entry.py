@@ -1,3 +1,9 @@
+import logging
+
+logging.basicConfig(filename='app.log',
+    format='%(asctime)s:%(levelname)s:%(message)s'
+)
+
 class PhoneEntry:
     def __init__(self, name, number):
         self.name = name
@@ -10,9 +16,11 @@ class PhoneEntry:
     def validateNumber(number):
         ans = False
         if(len(number) != 8):
-            print('Error', 'Number length should be equal to 8')
+            errorMsg = 'Number length should be equal to 8: ' + number
+            logging.error(errorMsg)
         elif any(char not in '0123456789' for char in number):
-            print('Error', 'Numbers should only contain digits 0-9')
+            errorMsg = 'Numbers should only contain digits 0-9: ' + number
+            logging.error(errorMsg)
         else:
             ans = True
         return ans
@@ -22,7 +30,8 @@ class PhoneEntry:
         lowerCaseName = name.lower()
         ans = False
         if any(c not in 'abcdefghijklmnopqrstuvwxyz' for c in lowerCaseName):
-            print('Error', 'Name should only containg English alphabet')
+            errorMsg = 'Name should only containg English alphabet: ' + lowerCaseName
+            logging.error(errorMsg)
         else:
             ans = True
         return ans
