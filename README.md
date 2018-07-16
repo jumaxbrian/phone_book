@@ -34,3 +34,6 @@
     To run tests, type the codes below to test each of the two classes
     1. `python3 test_phone_entry.py ` for `PhoneEntry`
     1. `python3 test_phone_book.py ` for `PhoneBook`
+
+1. ### Logged Errors
+    While running the application, you may encounter errors anticipated by the application e.g. invalid input. You will find these in a file called `app.log` in the same directory as the main program.
